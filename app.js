@@ -1302,6 +1302,10 @@ function handleChange(event) {
     return;
   }
 
+  if (target.closest("#auth-form")) {
+    return;
+  }
+
   if (!target.name) return;
 
   if (target.type === "checkbox") {
