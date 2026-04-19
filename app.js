@@ -1333,9 +1333,7 @@ async function handleSubmit(event) {
     render();
   }
 }
-if (target.closest("#auth-form")) {
-    return;
-  }
+
 async function bootstrap() {
   restoreDraftLocally();
   syncDerivedFields();
